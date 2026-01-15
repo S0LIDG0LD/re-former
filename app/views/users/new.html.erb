@@ -14,10 +14,10 @@
 <form accept-charset="UTF-8" action="/users" method="post">
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
   <label for="username">Username:</label>
-  <input id="username" name="username" type="text" /><br><br>
+  <input id="username" name="user[username]" type="text" /><br><br>
   <label for="email">Email:</label>
-  <input id="email" name="email" type="email" /><br><br>
+  <input id="email" name="user[email]" type="email" /><br><br>
   <label for="password">Password:</label>
-  <input id="password" name="password" type="password" /><br><br>
+  <input id="password" name="user[password]" type="password" /><br><br>
   <input type="submit" value="Submit">
 </form>
