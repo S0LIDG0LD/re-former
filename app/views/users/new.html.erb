@@ -15,10 +15,10 @@
 <%# Rails version %>
 <%# <% form_with url: "/users", method: :post, action: :create do |form| %>
 <%= form_with model: User.new do |form| %>
-  <%= form.label :username, "username:" %>
+  <%= form.label :username, "Your user name here" %>
   <%= form.text_field :username, name: "user[username]" %><br><br>
   <%= form.label :email, "email:" %>
-  <%= form.email_field :email, name: "user[email]" %><br><br>
+  <%= form.email_field :email, name: "user[email]", value: "example@example.com" %><br><br>
   <%= form.label :password, "Password:" %>
   <%= form.password_field :password, name: "user[password]" %><br><br>
   <%= form.submit "Submit" %>
